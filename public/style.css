@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: product-sans, Arial, sans-serif;
+}
+@font-face{
+  font-family: product-sans;
+  src: url('product.ttf');
+}
+body {
+  padding: 20px;
+  background: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+}
+
+#chat-box {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 400px;
+  overflow-y: scroll;
+  font-size: 16px;
+}
+
+.user {
+  color: blue;
+  margin: 5px 0;
+}
+
+.bot {
+  color: green;
+  margin: 5px 0;
+}
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      background-image: url('back.svg'); /* Update with correct SVG path */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 40px;
+      position: relative;
+    }
+
+    h1 {
+      background: rgba(255,255,255,0.8);
+      padding: 10px 24px;
+      border-radius: 16px;
+      font-size: 24px;
+      color: #1a2a3a;
+      z-index: 2;
+    }
+
+    #chat-box {
+      width: 92vw;
+      min-height: 80vh;
+      background: rgba(255,255,255,0.2);
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(31,38,135,0.10);
+      padding: 20px;
+      margin-top: 24px;
+      overflow-y: auto;
+      z-index: 2;
+    }
+
+    /* Optional: SVG decorative wave in background */
+    .svg-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.1;
+    }
+    .messages {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      justify-content: flex-start;
+      padding: 0 24px;
+      overflow-y: auto;
+      max-height: 60vh;
+    }
+    .message {
+      display: flex;
+      align-items: flex-end;
+      opacity: 0;
+      transform: translateY(40px) scale(0.95);
+      animation: popIn 0.5s forwards;
+      z-index: 2;
+    }
+    .message.user {
+      justify-content: flex-end;
+      animation-delay: 0.1s;
+    }
+    .message.bot {
+      justify-content: flex-start;
+      animation-delay: 0.3s;
+    }
+    .bubble {
+      white-space: pre-wrap;
+      max-width: 80%;
+      padding: 14px 22px;
+      border-radius: 16px 16px 4px 16px;
+      font-size: 1.08rem;
+      font-weight: 500;
+      box-shadow: 0 2px 12px 0 rgba(31,38,135,0.07);
+      transition: background 0.3s;
+      position: relative;
+      word-break: break-word;
+    }
+    .user .bubble {
+      background: linear-gradient(90deg, #b3e0ff 80%, #eaf6fb 100%);
+      color: #1a2a3a;
+      border-bottom-right-radius: 4px;
+      margin-left: 60px;
+      text-align: right;
+      align-self: flex-end;
+      border: 1px solid #a3cfff;
+    }
+    .bot .bubble {
+      background: #fff;
+      color: #1a2a3a;
+      border-bottom-left-radius: 4px;
+      margin-right: 60px;
+      text-align: left;
+      align-self: flex-start;
+      border: 1px solid #e0e7ef;
+    }
+    @keyframes popIn {
+      0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+/* Typing indicator animation */
+.typing-indicator {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.typing-indicator .bubble {
+  background: #ffffff;
+  border: 1px solid #e0e7ef;
+  padding: 10px 16px;
+  border-radius: 16px;
+  display: flex;
+  gap: 6px;
+  box-shadow: 0 2px 12px 0 rgba(31,38,135,0.07);
+}
+
+.typing-indicator .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #555;
+  border-radius: 50%;
+  animation: typing 1.3s infinite ease-in-out;
+}
+
+.typing-indicator .dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.typing-indicator .dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0%, 80%, 100% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+  40% {
+    transform: translateY(-6px);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,14 @@
+<svg width="1440" height="800" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9999ff"/>
+      <stop offset="100%" stop-color="#9999ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bgGradient)" />
+
+  <!-- Wave pattern (bottom) -->
+  <path d="M0,500 C200,600 400,400 600,500 C800,600 1000,400 1200,500 C1300,540 1440,500 1440,800 L1440,800 L0,800 Z"
+        fill="#0c1e31" />
+</svg>

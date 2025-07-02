@@ -1,0 +1,11 @@
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore Python cache
+__pycache__/
+
+# Ignore env file (optional)
+.env
+
+# Ignore log files (optional)
+*.log
