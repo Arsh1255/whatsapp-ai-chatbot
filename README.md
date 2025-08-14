@@ -148,4 +148,10 @@ Fork → Make changes → Submit PR.
 - [Twilio Sign Up](https://www.twilio.com/try-twilio)  
 - [Twilio Console](https://www.twilio.com/console)  
 - [OpenRouter Sign Up](https://openrouter.ai/signup)  
-- [ngrok](https://ngrok.com/)  
+- [ngrok](https://ngrok.com/)
+
+---
+
+## 📄 Detailed Setup Guide
+For the full step-by-step guide (with images), see the PDF:  
+[Download WhatsApp AI Chatbot Setup Guide](docs/CHATBOT_GUIDE.pdf)
