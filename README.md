@@ -154,4 +154,4 @@ Fork → Make changes → Submit PR.
 
 ## 📄 Detailed Setup Guide
 For the full step-by-step guide (with images), see the PDF:  
-[Download WhatsApp AI Chatbot Setup Guide](docs/CHATBOT_GUIDE.pdf)
+[Download WhatsApp AI Chatbot Setup Guide](public/CHATBOT_GUIDE.pdf)
