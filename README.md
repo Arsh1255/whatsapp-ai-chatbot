@@ -52,7 +52,7 @@ whatsapp-ai-chatbot/
 
 You can store secrets in a `.env` file or set them system-wide(recommended).
 
-### `.env` file (recommended)
+### `.env` file 
 Create a `.env` file in the project root:
 ```env
 PORT=3000
@@ -63,7 +63,7 @@ TWILIO_WHATSAPP_FROM=whatsapp:+14155238886
 API_KEY=or-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-**Permanent**:
+**Permanent (recommended)**:
 ```cmd
 setx PORT "3000"
 setx TWILIO_SID "ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
